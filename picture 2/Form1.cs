@@ -16,5 +16,25 @@ namespace picture_2
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y - 5);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 5);
+        }
     }
 }
