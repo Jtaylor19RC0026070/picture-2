@@ -64,12 +64,21 @@ namespace picture_2
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
                 await Task.Delay(100);
             }
-                        for (int i = 0; i < 10; i++)
+            for (int i = 0; i < 10; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y-5);
+                await Task.Delay(100);
+            }
+            for (int i = 0; i < 10; i++)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X - 5, pictureBox1.Location.Y);
                 await Task.Delay(100);
             }
-                
+            for (int i = 0; i < 10; i++)
+            {
+                pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 5);
+                await Task.Delay(100);
+            }
         }
 
         private async void Agrobutton2_ClickAsync(object sender, EventArgs e)
